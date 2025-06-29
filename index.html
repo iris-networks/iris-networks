@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Networks - Computer Use Agents for RPA</title>
+    <meta name="description" content="Building the Future of Computer Use Agents for RPA. AI-powered agents that automate complex computer tasks.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(22, 33, 62, 0.95);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #4f46e5;
+        }
+        
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #4f46e5, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #4f46e5, #06b6d4);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+        }
+        
+        main {
+            background: white;
+            margin: 0;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section:nth-child(even) {
+            background: #f8fafc;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1a1a2e;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature h3 {
+            color: #4f46e5;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .tech-item {
+            background: linear-gradient(45deg, #4f46e5, #06b6d4);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .comparison-table {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        th {
+            background: #4f46e5;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .metric {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .contact-links a {
+            color: #06b6d4;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-links a:hover {
+            color: #4f46e5;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">🌐 Iris Networks</a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>🌐 Iris Networks</h1>
+            <p>Building the Future of Computer Use Agents for RPA</p>
+            <a href="#features" class="cta-button">Explore Our Technology</a>
+        </div>
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>🚀 What We Do</h2>
+                <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+                    Iris Networks is pioneering the next generation of <strong>Computer Use Agents</strong> for Robotic Process Automation (RPA). 
+                    Our AI-powered agents can understand, interact with, and automate complex computer tasks just like a human would.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="features">
+            <div class="container">
+                <h2>🎯 Key Features</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>🤖 Intelligent Computer Use</h3>
+                        <p>AI agents that can see, click, type, and navigate any application</p>
+                    </div>
+                    <div class="feature">
+                        <h3>⚡ Advanced RPA</h3>
+                        <p>Automate complex workflows across multiple applications</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🧠 AI-Powered Decision Making</h3>
+                        <p>Smart agents that adapt to changing interfaces</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🔗 Seamless Integration</h3>
+                        <p>Works with existing tools and workflows</p>
+                    </div>
+                    <div class="feature">
+                        <h3>📊 Real-time Monitoring</h3>
+                        <p>Track and optimize automation performance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="technology">
+            <div class="container">
+                <h2>🛠 Technology Stack</h2>
+                <p style="text-align: center; margin-bottom: 2rem;">Our computer use agents leverage cutting-edge AI technologies:</p>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h3>Computer Vision</h3>
+                        <p>Advanced screen understanding and element detection</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>Natural Language Processing</h3>
+                        <p>Convert human instructions to automated actions</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>Machine Learning</h3>
+                        <p>Continuous improvement and adaptation</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>Multi-Modal AI</h3>
+                        <p>Combined vision, text, and action understanding</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="use-cases">
+            <div class="container">
+                <h2>🎯 Use Cases</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Business Process Automation</h3>
+                        <ul>
+                            <li>Data entry and migration</li>
+                            <li>Invoice processing</li>
+                            <li>Report generation</li>
+                            <li>Customer service workflows</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>Development & Testing</h3>
+                        <ul>
+                            <li>Automated testing across applications</li>
+                            <li>Deployment workflows</li>
+                            <li>Code review processes</li>
+                            <li>Quality assurance tasks</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>Enterprise Operations</h3>
+                        <ul>
+                            <li>System monitoring and maintenance</li>
+                            <li>Backup and recovery procedures</li>
+                            <li>Compliance reporting</li>
+                            <li>Inventory management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>🌟 Why Choose Iris Networks?</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Traditional RPA</th>
+                                <th>Iris Computer Use Agents</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Adaptability</strong></td>
+                                <td>Brittle, breaks with UI changes</td>
+                                <td>✅ AI-powered, adapts to changes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Setup Time</strong></td>
+                                <td>Weeks of configuration</td>
+                                <td>✅ Minutes with natural language</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Maintenance</strong></td>
+                                <td>Constant updates needed</td>
+                                <td>✅ Self-healing and adaptive</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Complexity</strong></td>
+                                <td>Limited to simple tasks</td>
+                                <td>✅ Handles complex workflows</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>📈 Performance Metrics</h2>
+                <div class="metrics">
+                    <div class="metric">
+                        <div class="metric-value">99.5%</div>
+                        <div>Task completion accuracy</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">10x</div>
+                        <div>Faster deployment than traditional RPA</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">80%</div>
+                        <div>Reduction in maintenance overhead</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-value">24/7</div>
+                        <div>Continuous operation capability</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>📞 Contact</h2>
+            <div class="contact-links">
+                <a href="https://iris-networks.ai">Website: iris-networks.ai</a>
+                <a href="mailto:hello@iris-networks.ai">Email: hello@iris-networks.ai</a>
+                <a href="https://linkedin.com/company/iris-networks">LinkedIn</a>
+                <a href="https://twitter.com/IrisNetworksAI">Twitter</a>
+            </div>
+            <p style="margin-top: 2rem; opacity: 0.8;">
+                Copyright © 2024 Iris Networks. All rights reserved.
+            </p>
+            <p style="margin-top: 1rem; font-size: 1.2rem;">
+                <strong>🌟 Star this repo to stay updated on our latest developments! 🌟</strong>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

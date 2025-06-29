@@ -2,7 +2,7 @@
 **Building the Future of Computer Use Agents for RPA**
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x300/1a1a2e/16213e?text=Iris+Networks+Computer+Use+Agents" alt="Iris Networks Banner">
+  <img src="assets/images/hero-banner.png" alt="Iris Networks - Building the Future of Computer Use Agents for RPA" width="800">
 </div>
 
 ## 🚀 What We Do
@@ -19,12 +19,31 @@ Iris Networks is pioneering the next generation of **Computer Use Agents** for R
 
 ## 🛠 Technology Stack
 
+<div align="center">
+  <img src="assets/images/hero-pattern.png" alt="AI Technology Pattern" width="600">
+</div>
+
 Our computer use agents leverage cutting-edge AI technologies:
+
+<table>
+<tr>
+<td width="50%">
 
 - **Computer Vision** - Advanced screen understanding and element detection
 - **Natural Language Processing** - Convert human instructions to automated actions
 - **Machine Learning** - Continuous improvement and adaptation
 - **Multi-Modal AI** - Combined vision, text, and action understanding
+
+</td>
+<td width="50%">
+
+<div align="center">
+  <img src="assets/images/computer-vision.png" alt="Computer Vision Technology" width="300">
+</div>
+
+</td>
+</tr>
+</table>
 
 ## 🎯 Use Cases
 
@@ -67,10 +86,20 @@ pip install iris-computer-use
 
 ## 📈 Performance Metrics
 
-- **99.5%** Task completion accuracy
-- **10x** Faster deployment than traditional RPA
-- **80%** Reduction in maintenance overhead
-- **24/7** Continuous operation capability
+<div align="center">
+  <img src="assets/images/ai-brain.png" alt="AI-Powered Performance" width="400">
+</div>
+
+<div align="center">
+
+| Metric | Performance |
+|--------|-------------|
+| **🎯 Task Completion Accuracy** | **99.5%** |
+| **⚡ Deployment Speed** | **10x** Faster than traditional RPA |
+| **🔧 Maintenance Reduction** | **80%** Less overhead |
+| **🕐 Operation Capability** | **24/7** Continuous |
+
+</div>
 
 ## 🔮 Coming Soon
 
@@ -107,5 +136,5 @@ Copyright © 2024 Iris Networks. All rights reserved.
 </div>
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x200/16213e/1a1a2e?text=Automate+Everything+with+AI" alt="Iris Networks Footer">
+  <img src="assets/images/hero-pattern.png" alt="Automate Everything with AI - Iris Networks" width="600">
 </div>
